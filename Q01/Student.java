@@ -34,6 +34,10 @@ class Student{
     }
 }
 
+class Classroom{
+    Student[] student=new Student[10]; 
+}
+
 class Main{
     public static void main(String[] args){
         Student st=new Student();
