@@ -3,7 +3,7 @@ class Student{
     private String name;
     private int dayAttended;
 
-    void Student(int studentid, String name, int dayAttended){
+    void StudentDetails(int studentid, String name, int dayAttended){
         this.studentid=studentid;
         this.name=name;
         this.dayAttended=dayAttended;
@@ -36,6 +36,7 @@ class Student{
 
 class Classroom{
     Student[] student=new Student[10]; 
+    
 }
 
 class Main{
