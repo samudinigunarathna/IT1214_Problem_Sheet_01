@@ -60,6 +60,16 @@ class Classroom{
 
     void attendance(int studentid, int dayAttended){
         
+        for (int i = 0; i < studentCount; i++) {
+            if (students[i].getStudentId() == studentId) {
+                students[i].setDaysAttended(newDaysAttended);
+                System.out.println("Updated attendance for student ID: " + studentId);
+                break;
+            }
+        }
+        if (!found) {
+            System.out.println("Student ID " + studentId + " not found.");
+        }
     }
 
     void DisplayList(){
