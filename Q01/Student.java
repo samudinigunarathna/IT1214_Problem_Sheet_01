@@ -36,7 +36,23 @@ class Student{
 
 class Classroom{
     
-    Student[] student=new Student[10]; 
+    private Student[] students; 
+    private int studentCount;
+
+    Classroom(){
+        students[]=new Student[10];
+        studentCount=0;
+        }
+
+    void addStudent(Student studentDetails){
+       if(studentCount<students.length){
+           students[studentCount]=studentDetails;
+           studentCount++
+       } 
+        else{
+            System.out.println("Class is full");
+        }
+    }
     
 }
 
