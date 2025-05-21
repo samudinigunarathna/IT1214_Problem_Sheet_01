@@ -9,18 +9,18 @@ class Ticket {
         this.seatNumber = seatNumber;
     }
 
-    public int getTicketNumber() {
+    int getTicketNumber() {
         return ticketNumber;
     }
 
-    public String getCustomerName() {
+    String getCustomerName() {
         return customerName;
     }
 
-    public int getSeatNumber() {
+    int getSeatNumber() {
         return seatNumber;
 
-    public String toString() {
+    String toString() {
         return "Ticket #" + ticketNumber + " | Customer: " + customerName + " | Seat: " + seatNumber;
     }
 }
@@ -46,19 +46,19 @@ class Ticket {
         this.seatNumber = seatNumber;
     }
 
-    public int getTicketNumber() {
+    int getTicketNumber() {
         return ticketNumber;
     }
 
-    public String getCustomerName() {
+    String getCustomerName() {
         return customerName;
     }
 
-    public int getSeatNumber() {
+    int getSeatNumber() {
         return seatNumber;
     }
 
-    public String toString() {
+    String toString() {
         return "Ticket #" + ticketNumber + " | Customer: " + customerName + " | Seat: " + seatNumber;
     }
 }
