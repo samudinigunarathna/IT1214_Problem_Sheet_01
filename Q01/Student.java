@@ -29,6 +29,10 @@ class Student{
         return dayAttended;
     }
 
+    String StudentInfo(){
+        return "Student ID "+studentid+" Name "+name+" No of days Attended "+dayAttended;
+    }
+
     void Display(){
         System.out.println("StudentID: "+studentid+" Name: "+name+" Days Attended: "+dayAttended);
     }
@@ -53,12 +57,29 @@ class Classroom{
             System.out.println("Class is full");
         }
     }
-    
+
+    void attendance(int studentid, int dayAttended){
+        
+    }
+
+    void DisplayList(){
+        System.out.println("Student List: ");
+        for(int i=0; i<studentCount; i++){
+            System.out.println(students[i].StudentInfo());
+        }
+    }
 }
 
 class Main{
     public static void main(String[] args){
-        Student st=new Student();
-        st.Display();
+        Classroom classroom=new Classroom();
+
+        classroom.addStudent(new Student(101,"Alice Smith",12));
+        classroom.addStudent(new Student(102,"Bob Jones",15));
+        classroom.addStudent(new Student(103, "Carol Lee", 10));
+
+        classroom.attendance(104,5);
+
+        classroom.DisplayList();
     }
 }
