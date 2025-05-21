@@ -35,6 +35,7 @@ class Student{
 }
 
 class Classroom{
+    
     Student[] student=new Student[10]; 
     
 }
